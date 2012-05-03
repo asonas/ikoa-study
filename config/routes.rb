@@ -1,4 +1,6 @@
 Ikoa::Application.routes.draw do
+  root :to => 'Users#index'
+
   resources :cats
 
   resources :users
