@@ -5,6 +5,8 @@ Ikoa::Application.routes.draw do
 
   resources :users
 
+  #match '/users/:user_id/cats' :to => 'Users#show_cats'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

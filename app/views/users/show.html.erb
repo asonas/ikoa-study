@@ -15,6 +15,9 @@
   <%= @user.age %>
 </p>
 
+<% @cats.each do |cat| %>
+<p><b>猫の名前</b> <%= link_to cat.name, 'cats' %></p>
+<% end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
